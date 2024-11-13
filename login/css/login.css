@@ -1,0 +1,131 @@
+.login-card__input {
+  background-color: transparent;
+  text-align: left;
+  border: 1px solid rgb(227 227 227 / 1);
+  border-radius: 4px;
+  font-size: 16px;
+  height: 28px;
+  margin: 1px 1px 0 1px;
+  width: 85%;
+  padding: 13px 15px;
+}
+
+.error {
+  border: 1px solid rgb(149, 7, 7);
+  outline: none;
+}
+
+.highlight {
+  border: 1px solid rgb(227 227 227 / 1);
+  outline: none;
+  transition: 0.4s;
+}
+
+.highlight:focus {
+  border: 1px solid rgb(168 199 250 / 1);
+}
+
+.login-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: light-dark(#f0f4f9, rgb(30 31 32 / 1));
+  justify-content: center;
+  padding: 48px 0;
+}
+
+.login-card {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  border-radius: 28px;
+  min-height: 300px;
+  width: 80%;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: light-dark(#fff, rgb(14 14 14 / 1));
+}
+
+.login-card-header {
+  display: flex;
+  justify-content: start;
+}
+
+.login-card-header__logo {
+  width: 64px;
+  height: 64px;
+  object-fit: cover;
+}
+
+.login-card-body {
+  display: flex;
+  flex-flow: row wrap;
+  height: 100%;
+  flex-grow: 1;
+}
+
+.login-card-body-half {
+  width: 50%;
+  gap: 10px;
+}
+
+.button {
+  border-radius: 20px;
+  border: none;
+  min-width: 64px;
+  align-items: center;
+  padding: 0 24px 0 24px;
+  margin: 6px 0 6px 0;
+  height: 40px;
+  cursor: pointer;
+}
+
+.button-primary {
+  color: light-dark(#fff, rgb(6 46 111 / 1));
+  background-color: light-dark(#0b57d0, rgb(168 199 250 / 1));
+}
+
+.button-secondary {
+  color: light-dark(#fff, rgb(168 199 250 / 1));
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.button-secondary:hover {
+  background-color: rgb(30 31 32 / 1);
+}
+
+.button-primary:hover {
+  background-color: rgb(185, 211, 252);
+}
+
+.login-card-footer {
+  display: flex;
+  gap: 15px;
+  width: 100%;
+  flex-flow: row wrap;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 24px;
+}
+
+.aligned {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+@media only screen and (max-width: 600px) {
+  .login-card-header {
+    justify-content: center;
+  }
+  .login-card-body-half {
+    text-align: center;
+    width: 100%;
+  }
+  .login-card-footer {
+    justify-content: space-evenly;
+  }
+}

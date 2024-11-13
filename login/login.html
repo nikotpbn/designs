@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/login.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <main>
+      <section>
+        <div class="login-container">
+          <div class="login-card">
+            <div class="login-card-header">
+              <img class="login-card-header__logo" src="src/logo.png" />
+            </div>
+            <div class="login-card-body">
+              <div class="login-card-body-half">
+                <h1>Fazer Login</h1>
+              </div>
+              <div class="login-card-body-half aligned">
+                <input
+                  id="email"
+                  class="login-card__input highlight"
+                  type="email"
+                  placeholder="email"
+                />
+                <input
+                  id="password"
+                  class="login-card__input highlight"
+                  type="password"
+                  placeholder="password"
+                />
+              </div>
+              <div class="login-card-footer">
+                <button id="recover" class="button button-secondary">
+                  Recuperar Contxa
+                </button>
+                <button id="login" class="button button-primary">Login</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="js/login.js"></script>
+    <script src="js/util.js"></script>
+  </body>
+</html>
